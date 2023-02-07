@@ -1,0 +1,659 @@
+<html>
+
+<head>
+    <title>Grocery e-Commarce</title>
+    <meta name="viewport" content="widt=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/MyStyle.css">
+
+    <!-- <link rel="stylesheet" href="css/MyStyle.css"> -->
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/Slider.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Start Header -->
+        <header>
+            <div class="row TopHead">
+                <div class="col-md-1 col-sm-12"></div>
+                <div class="col-md-3 col-sm-12">
+                    <a href="index.html">
+                        <img src="img/logo.png" id="img-logo" height="50">
+                        <span class="Logo">Grocerry Store</span></a>
+                </div>
+                <div class="col-md-4  col-sm-12">
+                    <input class="form-control" placeholder="Serach" style="margin-top: 10px;">
+                </div>
+                <div class="col-md-1 col-sm-12"></div>
+                <div class="col-md-1 col-sm-12 ">
+                    <a href="#">
+                        <button class="btn btn-secondry">Log In</button>
+                    </a>
+                </div>
+                <div class=" col-md-1 col-sm-12">
+                    <img src="img/cart.png" class="CartLog" onclick="openNav()" alt="" height="32">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="btn" onclick="closeNav()">&times;</a>
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12" aria-labelledby="exampleModalLabel">
+                                <h5 class="modal-title" id="exampleModalLabel">Cart Items</h5>
+                                <img src="img/ban5.jpg" height="250" alt="">
+                            </div>
+                        </div><br>
+                        <div class="row Items" id="cart">
+                            <div class="col-sm-4">
+                                <img src="" alt="" id="ItemImg" height="50" width="50">
+                            </div>
+                            <div class="col-sm-4">
+                                <span id="title"></span>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="Quantity">
+                                    <span class="Minus" style="font-size:20px;padding:10px">-</span>
+                                    <span class="Num">1</span>
+                                    <span class="Plus" style="font-size:15px">+</span>
+                                    <img src="img/trash.png" height="20" style="margin-right:1px;" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 col-sm-12 "></div>
+            </div>
+            <!-- <br> -->
+            <div class="container-fluid">
+                <nav>
+                    <div class="row Main-Menu">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="Menus">
+                                <a href="Shoplist.html">Snacks</a>
+                                <a href="Shoplist.html">Vegetables</a>
+                                <a href="Shoplist.html">Fruiits</a>
+                                <a href="Shoplist.html">Dry Fruits</a>
+                                <a href="Shoplist.html">Winter Creams</a>
+                                <a href="Shoplist.html">Cleaning</a>
+                                <a href="Shoplist.html">Home Essentetials</a>
+                                <a href="Shoplist.html">Gardning</a>
+                                <a href="Shoplist.html">Soft drinks</a>
+                                <a href="Shoplist.html">Masale</a>
+                                <a href="Shoplist.html">Dry Fruits</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- Start Shoplist Section -->
+
+        <div class="container">
+            <div class="row" style="margin-top:80px">
+                <div class="col-md-3 FilterColumn">
+                    <ul class="FilterUl">
+                        <li>
+                            <h6 class="FilterHeading">Category</h6>
+                            <hr>
+                        </li>
+                        <li><a href="">Aata & Sooji</a></li>
+                        <li><a href="">Snacks & Bakery</a></li>
+                        <li><a href="">Breads & Buns</a></li>
+                        <li><a href="">Cakes </a></li>
+                    </ul>
+                    <ul class="FilterUl">
+                        <li>
+                            <h6 class="FilterHeading">Brands</h6>
+                            <hr>
+                        </li>
+                        <li><a href="">Amul</a></li>
+                        <li><a href="">Basmati</a></li>
+                        <li><a href="">Gagan</a></li>
+                        <li><a href="">Maggy</a></li>
+                        <li><a href="">Fortune</a></li>
+                        <li><a href="">Almonds</a></li>
+                    </ul>
+                    <ul class="FilterUl">
+                        <li>
+                            <h6 class="FilterHeading">Food Preference</h6>
+                            <hr>
+                        </li>
+                        <li><a href="">Vegetarian</a></li>
+                        <li><a href="">Non-Vegetarian</a></li>
+                        <li><a href="">Vegan</a></li>
+                    </ul>
+
+                    <ul class="FilterUl">
+                        <li>
+                            <h6 class="FilterHeading">Country of Origin</h6>
+                            <hr>
+                        </li>
+                        <li><a href="">India</a></li>
+                        <li><a href="">USA</a></li>
+                        <li><a href="">Canada</a></li>
+                        <li><a href="">Africa</a></li>
+                    </ul>
+
+                    <ul class="FilterUl">
+                        <li>
+                            <h6 class="FilterHeading">Brands</h6>
+                            <hr>
+                        </li>
+                        <li><a href="">Amul</a></li>
+                        <li><a href="">Basmati</a></li>
+                        <li><a href="">Gagan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>Category</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="" id="" class="form-control">
+                                <option value="">Popularity</option>
+                                <option value="">Low To High</option>
+                                <option value="">High to Low</option>
+                                <option value="">Relavence</option>
+                                <option value="">Customer Rating</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" style="margin-top:20px">
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/EnergyDrinks.jpg" class="SectionImg">
+                                        </a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/coco.jpg" class="SectionImg" id="cartImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;2.5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html"> <img src="img/Apple2.png" class="SectionImg"
+                                                id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/Apple1.png" class="SectionImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/almonds.png" class="SectionImg" id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html"></a> <img src="img/EnergyDrinks.jpg"
+                                            class="SectionImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt=""> 4.3
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/EnergyDrinks.jpg" class="SectionImg">
+                                        </a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/coco.jpg" class="SectionImg" id="cartImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;2.5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html"> <img src="img/Apple2.png" class="SectionImg"
+                                                id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/Apple1.png" class="SectionImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/almonds.png" class="SectionImg" id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html"></a> <img src="img/EnergyDrinks.jpg"
+                                            class="SectionImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt=""> 4.3
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/EnergyDrinks.jpg" class="SectionImg">
+                                        </a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/coco.jpg" class="SectionImg" id="cartImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;2.5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html"> <img src="img/Apple2.png" class="SectionImg"
+                                                id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/Apple1.png" class="SectionImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/almonds.png" class="SectionImg" id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html"></a> <img src="img/EnergyDrinks.jpg"
+                                            class="SectionImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt=""> 4.3
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/EnergyDrinks.jpg" class="SectionImg">
+                                        </a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/coco.jpg" class="SectionImg" id="cartImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;2.5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html"> <img src="img/Apple2.png" class="SectionImg"
+                                                id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html">
+                                            <img src="img/Apple1.png" class="SectionImg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt="">&nbsp;5
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm Sections2" id="item1">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <a href="Products_Details.html">
+                                            <img src="img/almonds.png" class="SectionImg" id="cartImg"></a>
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <a href="Products_Details.html"></a> <img src="img/EnergyDrinks.jpg"
+                                            class="SectionImg">
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 class="aboutImg ">Almonds</h6>
+                            <p class="title">BB Popular Almond/Californian, Giri, 500 g Pouch</p>
+                            <div class="Ratings">
+                                <img src="img/star-icon.png" height="13" alt=""> 4.3
+                            </div>
+                            <div class="priceSection">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        MRP : <span class="LowPrice">₹99/Kg</span>
+                                        <span class="HighPrice"> <STRIKE>₹ 150/Kg</STRIKE></span>
+                                        <p class="Delivry">Standard Delivery : Tomorrow 9:00-12:00PM</p>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <button class="CartButton2" onclick="addToCart(item1)">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Section -->
+
+        <footer class="Footer">
+            <div class="container">
+                <div class="row" style="margin-top:45px:">
+                    <div class="col-md-4 col-sm">
+                        <input type="text" placeholder="user@gmailcom" class="form-control EmailInput">
+                    </div>
+                    <div class="col-md-3 col-sm">
+                        <button type="submit" class="btn btn-primary BtnSubmit">Submit</button>
+                    </div>
+                    <div class="col-md-4 col-sm">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm">
+                        <h4 class="FooterHeading">OUR STORE
+                            <hr style="border:1px solid silver">
+                        </h4>
+                        <p class="something">2/60 , Vipul Khand ,Gomti Nagar<br>
+                            Lucknow {226010}<br>+91 9876 543 210<br>+91 9876 543 210</p>
+                    </div>
+                    <div class="col-md-1 col-sm"></div>
+                    <div class="col-md-4 col-sm">
+                        <ul>
+                            <li>
+                                <h4 class="FooterHeading">CATEGORY
+                                    <hr style="border:1px solid silver">
+                                </h4>
+                            </li>
+                            <li><a href="index.html" class="FooterCate">Vagetables</a></li>
+                            <li><a href="index.html" class="FooterCate">Fruits</a></li>
+                            <li><a href="index.html" class="FooterCate">Soft Drinks</a></li>
+                            <li><a href="index.html" class="FooterCate">Dry Fruits</a></li>
+                            <li><a href="index.html" class="FooterCate">Home Essentials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm">
+                        <ul>
+                            <li>
+                                <h4 class="FooterHeading">Brands
+                                    <hr style="border:1px solid silver">
+                                </h4>
+                            </li>
+                            <li><a href="index.html" class="FooterCate">Maggy</a></li>
+                            <li><a href="index.html" class="FooterCate">Amul</a></li>
+                            <li><a href="index.html" class="FooterCate">Fortune</a></li>
+                            <li><a href="index.html" class="FooterCate">Dry Fruits</a></li>
+                            <li><a href="index.html" class="FooterCate">Home Essentials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="row endpoint m-0 p-0">
+            <div class="col-md-3 col-sm-12">
+                <span class="Info">© SJ Grocerry Store</span>
+            </div>
+            <div class="col-md-5 col-sm-12"></div>
+            <div class="col-md-4 col-sm-12">
+                <span class="Info">Design & Developed By Ashutosh Soni</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.count').prop('disabled', true);
+            $(document).on('click', '.plus', function () {
+                $('.count').val(parseInt($('.count').val()) + 1);
+            });
+            $(document).on('click', '.minus', function () {
+                $('.count').val(parseInt($('.count').val()) - 1);
+                if ($('.count').val() == 0) {
+                    add
+                    $('.count').val(1);
+                }
+            });
+        });
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "450px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+    <script src="js/MyjQuery.js"></script>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/Slider.js"></script>
+</body>
+
+</html>

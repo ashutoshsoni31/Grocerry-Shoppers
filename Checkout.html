@@ -1,0 +1,233 @@
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="widt=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/MyStyle.css">
+
+    <!-- <link rel="stylesheet" href="css/MyStyle.css"> -->
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/Slider.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="row TopHead">
+            <div class="col-md-1 col-sm-12"></div>
+            <div class="col-md-3 col-sm-12">
+                <a href="index.html">
+                    <img src="img/logo.png" id="img-logo" height="50">
+                    <span class="Logo">Grocerry Store</span></a>
+            </div>
+            <div class="col-md-4  col-sm-12">
+                <input class="form-control" placeholder="Serach" style="margin-top: 10px;">
+            </div>
+            <div class="col-md-1 col-sm-12"></div>
+            <div class="col-md-1 col-sm-12 ">
+                <a href="#">
+                    <button class="btn btn-secondry">Log In</button>
+                </a>
+            </div>
+            <div class=" col-md-1 col-sm-12">
+                <img src="img/cart.png" class="CartLog" onclick="openNav()" alt="" height="32">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="btn" onclick="closeNav()">&times;</a>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12" aria-labelledby="exampleModalLabel">
+                            <h5 class="modal-title" id="exampleModalLabel">Cart Items</h5>
+                            <img src="img/ban5.jpg" height="250" alt="">
+                        </div>
+                    </div><br>
+                    <div class="row Items" id="cart">
+                        <div class="col-sm-4">
+                            <img src="" alt="" id="ItemImg" height="50" width="50">
+                        </div>
+                        <div class="col-sm-4">
+                            <span id="title"></span>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="Quantity">
+                                <span class="Minus" style="font-size:20px;padding:10px">-</span>
+                                <span class="Num">1</span>
+                                <span class="Plus" style="font-size:15px">+</span>
+                                <img src="img/trash.png" height="20" style="margin-right:1px;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-12 "></div>
+        </div>
+        <!-- <br> -->
+        <div class="container-fluid">
+            <nav>
+                <div class="row Main-Menu">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="Menus">
+                            <a href="Shoplist.html">Snacks</a>
+                            <a href="Shoplist.html">Vegetables</a>
+                            <a href="Shoplist.html">Fruiits</a>
+                            <a href="Shoplist.html">Dry Fruits</a>
+                            <a href="Shoplist.html">Winter Creams</a>
+                            <a href="Shoplist.html">Cleaning</a>
+                            <a href="Shoplist.html">Home Essentetials</a>
+                            <a href="Shoplist.html">Gardning</a>
+                            <a href="Shoplist.html">Soft drinks</a>
+                            <a href="Shoplist.html">Masale</a>
+                            <a href="Shoplist.html">Dry Fruits</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="container">
+        <div class="row" style="margin-top:70px">
+            <div class="col-md-7 col-sm ProductSection">
+                <div class="row">
+                    <div class="col-md-12 col-sm">
+                        <h5 class="CartTitle">Groceries Basket (1 items)</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm">
+                        <p class="T_C">Shop groceries worth ₹1499 & get sugar at ₹9 (Offer is applicable only on
+                            products sold by Reliance Retail . For specific exclusions & offer details refer T&C)</p>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:20px">
+                    <div class="col-md-2 col-sm">
+                        <img src="img/almonds.png" height="100" alt="">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-9 col-sm">
+                        <span>BB Popular Almond/Californian, Giri, 500 g Pouch</span><br>
+                        MRP : <span class="LowPrice">₹99.00/Kg</span>
+                        <span class="HighPrice"> <STRIKE>₹ 149/Kg</STRIKE></span><br>
+                        <span style="color:green">You save ₹50.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md1 col-sm"></div>
+            <div class="col-md-4 col-sm PriceSection2">
+                <div class="row">
+                    <div class="col-md-12 col-sm">
+                        <h4 style="padding-top:20px">Payments details</h4>
+                        <hr>
+                    </div><br>
+                    <div class="col-md-9 col-sm">
+                        <span class="CartMrp">MRP Total :</span>
+                    </div>
+                    <div class="col-md-3 col-sm">
+                        <span class="CartAmount">₹149.00</span>
+                    </div>
+                    <div class="col-md-9 col-sm">
+                        <span class="CartMrp">Payment Discount :</span>
+                    </div>
+                    <div class="col-md-3 col-sm">
+                        <span class="CartAmount">-₹50.00</span>
+                    </div>
+                    <div class="col-md-9 col-sm" style="margin-top:10px">
+                        <h5>Total Amount :</h5>
+                    </div>
+                    <div class="col-md-3 col-sm">
+                        <span class="CartAmount">₹99.00</span>
+                        <br> <span class="Saved">You save ₹50</span>
+                    </div>
+                    <button class="OrderBTN">Place order</button>
+                </div>
+            </div>
+        </div>
+        <footer class="Footer">
+            <div class="container">
+                <div class="row" style="margin-top:45px:">
+                    <div class="col-md-4 col-sm">
+                        <input type="text" placeholder="user@gmailcom" class="form-control EmailInput">
+                    </div>
+                    <div class="col-md-3 col-sm">
+                        <button type="submit" class="btn btn-primary BtnSubmit">Submit</button>
+                    </div>
+                    <div class="col-md-4 col-sm">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm">
+                        <h4 class="FooterHeading">OUR STORE
+                            <hr style="border:1px solid silver">
+                        </h4>
+                        <p class="something">2/60 , Vipul Khand ,Gomti Nagar<br>
+                            Lucknow {226010}<br>+91 9876 543 210<br>+91 9876 543 210</p>
+                    </div>
+                    <div class="col-md-1 col-sm"></div>
+                    <div class="col-md-4 col-sm">
+                        <ul>
+                            <li>
+                                <h4 class="FooterHeading">CATEGORY
+                                    <hr style="border:1px solid silver">
+                                </h4>
+                            </li>
+                            <li><a href="index.html" class="FooterCate">Vagetables</a></li>
+                            <li><a href="index.html" class="FooterCate">Fruits</a></li>
+                            <li><a href="index.html" class="FooterCate">Soft Drinks</a></li>
+                            <li><a href="index.html" class="FooterCate">Dry Fruits</a></li>
+                            <li><a href="index.html" class="FooterCate">Home Essentials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm">
+                        <ul>
+                            <li>
+                                <h4 class="FooterHeading">Brands
+                                    <hr style="border:1px solid silver">
+                                </h4>
+                            </li>
+                            <li><a href="index.html" class="FooterCate">Maggy</a></li>
+                            <li><a href="index.html" class="FooterCate">Amul</a></li>
+                            <li><a href="index.html" class="FooterCate">Fortune</a></li>
+                            <li><a href="index.html" class="FooterCate">Dry Fruits</a></li>
+                            <li><a href="index.html" class="FooterCate">Home Essentials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="row endpoint m-0 p-0">
+
+        <div class="col-md-3 col-sm-12">
+            <span class="Info">© SJ Grocerry Store</span>
+        </div>
+        <div class="col-md-5 col-sm-12"></div>
+        <div class="col-md-4 col-sm-12">
+            <span class="Info">Design & Developed By Ashutosh Soni</span>
+        </div>
+    </div>
+    </div>
+    <script src="js/MyjQuery.js"></script>
+    <script src="js/jQuery.min.js"></script>
+    <script src="js/Slider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.count').prop('disabled', true);
+            $(document).on('click', '.plus', function () {
+                $('.count').val(parseInt($('.count').val()) + 1);
+            });
+            $(document).on('click', '.minus', function () {
+                $('.count').val(parseInt($('.count').val()) - 1);
+                if ($('.count').val() == 0) {
+                    add
+                    $('.count').val(1);
+                }
+            });
+        });
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "450px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    </body>
+    </html>
